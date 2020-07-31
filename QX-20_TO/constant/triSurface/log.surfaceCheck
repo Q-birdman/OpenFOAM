@@ -1,0 +1,96 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2006                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _b45f8f6f58-20200629 OPENFOAM=2006
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceCheck airplane.obj
+Date   : Jul 31 2020
+Time   : 16:08:08
+Host   : LAPTOP-FT2TN4T9
+PID    : 787
+I/O    : uncollated
+Case   : /mnt/c/Users/mtk_m/OneDrive/Documents/OpenFOAM/QX-20_TO/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading surface from "airplane.obj" ...
+
+Statistics:
+Triangles    : 92294 in 1 region(s)
+Vertices     : 46146
+Bounding Box : (-1.40296 -13.1966 -0.623868) (3.90337 13.1966 1.79886)
+
+Region	Size
+------	----
+QX-20_TO	92294
+
+
+Surface has no illegal triangles.
+
+Triangle quality (equilateral=1, collapsed=0):
+    0 .. 0.05  : 0.401478
+    0.05 .. 0.1  : 0.134765
+    0.1 .. 0.15  : 0.091306
+    0.15 .. 0.2  : 0.0669816
+    0.2 .. 0.25  : 0.0456151
+    0.25 .. 0.3  : 0.034
+    0.3 .. 0.35  : 0.0312155
+    0.35 .. 0.4  : 0.0228075
+    0.4 .. 0.45  : 0.0202397
+    0.45 .. 0.5  : 0.0211065
+    0.5 .. 0.55  : 0.0229484
+    0.55 .. 0.6  : 0.0220274
+    0.6 .. 0.65  : 0.0186253
+    0.65 .. 0.7  : 0.0201313
+    0.7 .. 0.75  : 0.0237285
+    0.75 .. 0.8  : 0.0166316
+    0.8 .. 0.85  : 0.00277374
+    0.85 .. 0.9  : 0.0015494
+    0.9 .. 0.95  : 0.00112683
+    0.95 .. 1  : 0.00094264
+
+    min 0 for triangle 20221
+    max 0.99988 for triangle 9996
+
+--> FOAM Warning : 
+    From int main(int, char**)
+    in file surfaceCheck.C at line 594
+    Minimum triangle quality is 0. This might give problems in self-intersection testing later on.
+Dumping bad quality faces to "badFaces"
+Paste this into the input for surfaceSubset
+
+
+Edges:
+    min 0 for edge 31071 points (0.243606 -12.4626 1.60762)(0.243606 -12.4626 1.60762)
+    max 1.46168 for edge 29893 points (2.44171 0.0335588 0.297188)(3.90336 0.0323339 0.305747)
+
+Checking for points less than 1e-6 of bounding box ((5.30633 26.3932 2.42273) metre) apart.
+    small edge between points 830 (0.996856 -0.0434874 -0.00677964) and 829 (0.996838 -0.0434797 -0.00678436) distance:2.01387e-05
+    small edge between points 833 (0.99688 -0.0435055 -0.00677131) and 831 (0.996871 -0.0434974 -0.00677466) distance:1.25631e-05
+    small edge between points 835 (0.996887 -0.0435191 -0.00676655) and 834 (0.996884 -0.0435109 -0.00676927) distance:9.1454e-06
+    close unconnected points 836 (0.996889 -0.043528 -0.00676393) and 838 (0.996887 -0.0435463 -0.00675937) distance:1.89653e-05
+    small edge between points 837 (0.996889 -0.0435372 -0.00676151) and 836 (0.996889 -0.043528 -0.00676393) distance:9.51296e-06
+    small edge between points 3601 (0.997338 0.0430424 -0.00672316) and 3600 (0.997334 0.0430369 -0.0067252) distance:7.10011e-06
+    small edge between points 3602 (0.997341 0.0430485 -0.00672111) and 3601 (0.997338 0.0430424 -0.00672316) distance:7.10018e-06
+    close unconnected points 3606 (0.997344 0.0430759 -0.00671374) and 3603 (0.997344 0.0430551 -0.00671911) distance:2.1482e-05
+    close unconnected points 3604 (0.997345 0.0430619 -0.0067172) and 3606 (0.997344 0.0430759 -0.00671374) distance:1.44559e-05
+    small edge between points 3605 (0.997345 0.0430689 -0.00671539) and 3604 (0.997345 0.0430619 -0.0067172) distance:7.23022e-06
+Suppressing further warning messages. Use -outputThreshold to increase number of warnings.
+Found 50 nearby points.
+
+Surface is closed. All edges connected to two faces.
+
+Number of unconnected parts : 1
+
+Number of zones (connected area with consistent normal) : 1
+
+
+End
+
